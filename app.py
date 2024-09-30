@@ -459,10 +459,10 @@ elif selected == "Contact":
     st.write("This application was designed and deployed by **Tharwat El-Sayed Ismail**, under the supervision of:")
 
     # Load images
-    ayman_image = Image.open("/mnt/data/Ayman Elsayed.jpg")
-    elrashidy_image = Image.open("/mnt/data/Mohamed-Elrashidy.jpg")
-    abdallah_image = Image.open("/mnt/data/Abdullah-N-Moustafa.png")
-    tharwat_image = Image.open("/path_to_your_image.jpg")  # Replace with your image path
+    ayman_image = Image.open("Ayman Elsayed.jpg")
+    elrashidy_image = Image.open("Mohamed-Elrashidy.jpg")
+    abdallah_image = Image.open("Abdullah-N-Moustafa.png")
+    tharwat_image = Image.open("Tharwat Elsayed Ismail.jpg")  # Replace with your image path
 
     # Display Prof. Dr. Ayman EL-Sayed info and image
     st.subheader("Prof. Dr. Ayman EL-Sayed")
