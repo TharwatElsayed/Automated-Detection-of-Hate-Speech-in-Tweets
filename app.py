@@ -12,6 +12,7 @@ from nltk.tokenize import word_tokenize
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.utils import pad_sequences
 import pickle
+from PIL import Image
 
 # Preprocessing functions
 space_pattern = '\s+'
@@ -450,19 +451,41 @@ elif selected == "About":
     st.markdown("---")
 
 elif selected == "Contact":
-    st.title("Contact Me")
-    
-    st.write("""
-    I’m Tharwat El-Sayed Ismail, (Data Scientist - AI Developer) I am a Data Scientist with expertise in statistical analysis, machine learning (ML), and data visualization, I bring a wealth of experience in Python, adept at extracting actionable insights to inform strategic decisions and effectively solve real-world problems. Additionally, I am an AI Developer proficient in Python, TensorFlow, and PyTorch, specialized in creating scalable AI solutions to drive business growth and enhance user experiences. Highly skilled in machine learning, natural language processing (NLP).
-    
-    **Contact Information:**
-    
-    - **Email:** tharwat_uss89@hotmail.com
-    - **LinkedIn:** [Tharwat El-Sayed](www.linkedin.com/in/tharwat-el-sayed-706276b1/)
-    - **Portfolio:** [View My Work](https://linktr.ee/tharwat.elsayed)
-    
-    I look forward to connecting with you!
-    """)
+    st.title("Contact Us")
+    # Set page title and header
+    st.title("Contact & Supervisors")
+
+    # Introduction text
+    st.write("This application was designed and deployed by **Tharwat El-Sayed Ismail**, under the supervision of:")
+
+    # Load images
+    ayman_image = Image.open("/mnt/data/Ayman Elsayed.jpg")
+    elrashidy_image = Image.open("/mnt/data/Mohamed-Elrashidy.jpg")
+    abdallah_image = Image.open("/mnt/data/Abdullah-N-Moustafa.png")
+    tharwat_image = Image.open("/path_to_your_image.jpg")  # Replace with your image path
+
+    # Display Prof. Dr. Ayman EL-Sayed info and image
+    st.subheader("Prof. Dr. Ayman EL-Sayed")
+    st.image(ayman_image, caption="Prof. Dr. Ayman EL-Sayed", width=200)
+    st.write("[ayman.elsayed@el-eng.menofia.edu.eg](mailto:ayman.elsayed@el-eng.menofia.edu.eg)")
+
+    # Display Prof. Assoc. Dr. Mohamed Elrashidy info and image
+    st.subheader("Prof. Assoc. Dr. Mohamed Elrashidy")
+    st.image(elrashidy_image, caption="Prof. Assoc. Dr. Mohamed Elrashidy", width=200)
+    st.write("[malrashidy123@gmail.com](mailto:malrashidy123@gmail.com)")
+
+    # Display Dr. Abdallah Moustafa Nabil info and image
+    st.subheader("Dr. Abdallah Moustafa Nabil")
+    st.image(abdallah_image, caption="Dr. Abdallah Moustafa Nabil", width=200)
+    st.write("[abdalla.moustafa@ejust.edu.eg](mailto:abdalla.moustafa@ejust.edu.eg)")
+
+    # Display your contact info and image
+    st.subheader("Tharwat El-Sayed Ismail (Developer)")
+    st.image(tharwat_image, caption="Tharwat El-Sayed Ismail", width=200)  # Adjust image size as needed
+    st.write("[tharwat_uss89@hotmail.com](mailto:tharwat_uss89@hotmail.com)")
+
+    # Footer note
+    st.write("For any inquiries, feel free to reach us.")
     
     # Horizontal line separator
     st.markdown("---")
