@@ -462,7 +462,7 @@ elif selected == "Contact":
     ayman_image = Image.open("Ayman Elsayed.jpg")
     elrashidy_image = Image.open("Mohamed-Elrashidy.jpg")
     abdallah_image = Image.open("Abdullah-N-Moustafa.png")
-    tharwat_image = Image.open("Tharwat Elsayed Ismail.jpg")  # Replace with your image path
+    tharwat_image = Image.open("Tharwat Elsayed Ismail.JPG")  # Replace with your image path
 
     # Display Prof. Dr. Ayman EL-Sayed info and image
     st.subheader("Prof. Dr. Ayman EL-Sayed")
