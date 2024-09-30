@@ -480,7 +480,7 @@ elif selected == "Contact":
     st.write("[abdalla.moustafa@ejust.edu.eg](mailto:abdalla.moustafa@ejust.edu.eg)")
 
     # Display your contact info and image
-    st.subheader("Tharwat El-Sayed Ismail (Developer)")
+    st.subheader("Eng. Tharwat El-Sayed Ismail")
     st.image(tharwat_image, caption="Tharwat El-Sayed Ismail", width=200)  # Adjust image size as needed
     st.write("[tharwat_uss89@hotmail.com](mailto:tharwat_uss89@hotmail.com)")
 
