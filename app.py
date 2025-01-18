@@ -460,7 +460,6 @@ elif selected == "Contact":
 
     # Load images
     ayman_image = Image.open("Ayman Elsayed.jpg")
-    elrashidy_image = Image.open("Mohamed-Elrashidy.jpg")
     abdallah_image = Image.open("Abdullah-N-Moustafa.png")
     tharwat_image = Image.open("Tharwat Elsayed Ismail.JPG")  # Replace with your image path
 
