@@ -469,11 +469,6 @@ elif selected == "Contact":
     st.image(ayman_image, caption="Prof. Dr. Ayman EL-Sayed", width=200)
     st.write("[ayman.elsayed@el-eng.menofia.edu.eg](mailto:ayman.elsayed@el-eng.menofia.edu.eg)")
 
-    # Display Prof. Assoc. Dr. Mohamed Elrashidy info and image
-    st.subheader("Prof. Assoc. Dr. Mohamed Elrashidy")
-    st.image(elrashidy_image, caption="Prof. Assoc. Dr. Mohamed Elrashidy", width=200)
-    st.write("[malrashidy123@gmail.com](mailto:malrashidy123@gmail.com)")
-
     # Display Dr. Abdallah Moustafa Nabil info and image
     st.subheader("Dr. Abdallah Moustafa Nabil")
     st.image(abdallah_image, caption="Dr. Abdallah Moustafa Nabil", width=200)
